@@ -31,8 +31,8 @@ twitter_username: jekyllrb
 github_username:  fengxuway
 
 # Build settings
-#theme: minima
-theme: jekyll-theme-slate
+theme: minima
+#theme: jekyll-theme-slate
 #theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
