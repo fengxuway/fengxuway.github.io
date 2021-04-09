@@ -9,17 +9,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="众所周知，Markdown文档需要图床作为支持，才能在互联网中方便的共享。在图床平台里，七牛云深得大家推荐，可弊端也很明显，需要手机号注册（貌似还需要域名备案？），大陆服务的通病吧。个人对这个颇有芥蒂，生怕不小心分享了一些越界内容被抓到小辫辫。另外还有一些免费的小网站提供图床，又担心随时可能停服关门，数据丢了就太可惜了。 直到今天无意间发现自己用的MWeb笔记软件有自定义图床，索性写个服务尝试了一下，整个过程很简单，如果大家对安全性/隐私性要求高，且用的markdown编辑软件提供如图“自定义图床”这样的功能，不妨一试～" />
 <meta property="og:description" content="众所周知，Markdown文档需要图床作为支持，才能在互联网中方便的共享。在图床平台里，七牛云深得大家推荐，可弊端也很明显，需要手机号注册（貌似还需要域名备案？），大陆服务的通病吧。个人对这个颇有芥蒂，生怕不小心分享了一些越界内容被抓到小辫辫。另外还有一些免费的小网站提供图床，又担心随时可能停服关门，数据丢了就太可惜了。 直到今天无意间发现自己用的MWeb笔记软件有自定义图床，索性写个服务尝试了一下，整个过程很简单，如果大家对安全性/隐私性要求高，且用的markdown编辑软件提供如图“自定义图床”这样的功能，不妨一试～" />
-<link rel="canonical" href="http://localhost:4000/%E5%BB%BA%E7%AB%99/https/2021/04/09/picture-bed.html" />
-<meta property="og:url" content="http://localhost:4000/%E5%BB%BA%E7%AB%99/https/2021/04/09/picture-bed.html" />
+<link rel="canonical" href="docs.maogu.im/%E5%BB%BA%E7%AB%99/https/2021/04/09/picture-bed.html" />
+<meta property="og:url" content="docs.maogu.im/%E5%BB%BA%E7%AB%99/https/2021/04/09/picture-bed.html" />
 <meta property="og:site_name" content="the Docs from fengxuway" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-04-09T16:26:24+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="在自己的服务器上搭建图床服务" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/%E5%BB%BA%E7%AB%99/https/2021/04/09/picture-bed.html"},"url":"http://localhost:4000/%E5%BB%BA%E7%AB%99/https/2021/04/09/picture-bed.html","headline":"在自己的服务器上搭建图床服务","dateModified":"2021-04-09T16:26:24+08:00","datePublished":"2021-04-09T16:26:24+08:00","description":"众所周知，Markdown文档需要图床作为支持，才能在互联网中方便的共享。在图床平台里，七牛云深得大家推荐，可弊端也很明显，需要手机号注册（貌似还需要域名备案？），大陆服务的通病吧。个人对这个颇有芥蒂，生怕不小心分享了一些越界内容被抓到小辫辫。另外还有一些免费的小网站提供图床，又担心随时可能停服关门，数据丢了就太可惜了。 直到今天无意间发现自己用的MWeb笔记软件有自定义图床，索性写个服务尝试了一下，整个过程很简单，如果大家对安全性/隐私性要求高，且用的markdown编辑软件提供如图“自定义图床”这样的功能，不妨一试～","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"docs.maogu.im/%E5%BB%BA%E7%AB%99/https/2021/04/09/picture-bed.html"},"url":"docs.maogu.im/%E5%BB%BA%E7%AB%99/https/2021/04/09/picture-bed.html","headline":"在自己的服务器上搭建图床服务","dateModified":"2021-04-09T16:26:24+08:00","datePublished":"2021-04-09T16:26:24+08:00","description":"众所周知，Markdown文档需要图床作为支持，才能在互联网中方便的共享。在图床平台里，七牛云深得大家推荐，可弊端也很明显，需要手机号注册（貌似还需要域名备案？），大陆服务的通病吧。个人对这个颇有芥蒂，生怕不小心分享了一些越界内容被抓到小辫辫。另外还有一些免费的小网站提供图床，又担心随时可能停服关门，数据丢了就太可惜了。 直到今天无意间发现自己用的MWeb笔记软件有自定义图床，索性写个服务尝试了一下，整个过程很简单，如果大家对安全性/隐私性要求高，且用的markdown编辑软件提供如图“自定义图床”这样的功能，不妨一试～","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="the Docs from fengxuway" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="docs.maogu.im/feed.xml" title="the Docs from fengxuway" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">the Docs from fengxuway</a><nav class="site-nav">
