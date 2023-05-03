@@ -33,7 +33,7 @@ go get github.com/satori/go.uuid
 touch main.go
 ```
 
-完整代码：
+完整代码 ：
 
 ```
 package main

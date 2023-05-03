@@ -1,0 +1,3 @@
+
+build:
+	hugo -d docs

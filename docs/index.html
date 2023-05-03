@@ -220,7 +220,7 @@ errcode -type=Err --linecomment -codefunc=Code -unknowncode=-1 可在同级目�
         <div class="post-content-preview">
 	
             众所周知，Markdown 文档需要图床作为支持，才能在互联网中方便的共享。在图床平台里，七牛云深得大家推荐，可弊端也很明显，需要手机号注册（貌似还需要域名备案？），大陆服务的通病吧。个人对这个颇有芥蒂，生怕不小心分享了一些越界内容被抓到小辫辫。另外还有一些免费的小网站提供图床，又担心随时可能停服关门，数据丢了就太可惜了。 直到今天无意间发现自己用的 MWeb 笔记软件有自定义图床，索性写个服务尝试了一下，整个过程很简单，如果大家对安全性/隐私性要求高，且用的 markdown 编辑软件提供如图“自定义图床”这样的功能，不妨一试～ 图床服务代码 图床服务使用 golang + gin 框架实现，创建项目：
-mkdir picture_bed cd picture_bed # 初始化 项目 go mod init github.com/xxxx/xxxxx # 下载依赖 go get github.com/gin-gonic/gin go get github.com/satori/go.uuid # 创建main代码 touch main.go 完整代码：
+mkdir picture_bed cd picture_bed # 初始化 项目 go mod init github.com/xxxx/xxxxx # 下载依赖 go get github.com/gin-gonic/gin go get github.com/satori/go.uuid # 创建main代码 touch main.go 完整代码 ：
 package main import ( &#34;fmt&#34; &#34;log&#34; &#34;net/http&#34; &#34;os&#34; &#34;path/filepath&#34; &#34;regexp&#34; &#34;time&#34; &#34;github.com/gin-gonic/gin&#34; uuid &#34;github.com/satori/go.uuid&#34; ) var ( uploadAPIPath = &#34;/&#34; downloadAPIPath = &#34;/&#34; dst = &#34;/data/upload&#34; token = &#34;自定义你的token&#34; reg = regexp.MustCompile(`.*?(\.\w+)$`) ) func main() { gin.
        
         </div>
