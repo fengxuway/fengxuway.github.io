@@ -5,9 +5,13 @@ description: ""
 date: 2023-05-03
 author:      ""
 image: ""
-tags: ["tag1", "tag2"]
+tags: ["Golang", "Error Code"]
 categories: ["Tech"]
 ---
+
+基于 Golang int 枚举的错误类型生成工具
+
+<!--more-->
 
 代码链接：https://github.com/fengxuway/errcode
 

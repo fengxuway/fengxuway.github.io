@@ -8,9 +8,27 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fengxu.im/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Error Code</title>
+      <link>https://blog.fengxu.im/tags/error-code/</link>
+      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fengxu.im/tags/error-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://blog.fengxu.im/tags/golang/</link>
+      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fengxu.im/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>tag1</title>
       <link>https://blog.fengxu.im/tags/tag1/</link>
-      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://blog.fengxu.im/tags/tag1/</guid>
       <description></description>
@@ -19,7 +37,7 @@
     <item>
       <title>tag2</title>
       <link>https://blog.fengxu.im/tags/tag2/</link>
-      <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://blog.fengxu.im/tags/tag2/</guid>
       <description></description>
