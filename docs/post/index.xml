@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>http://example.org/post/</link>
+    <link>https://blog.fengxu.im/post/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fengxu.im/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang 错误码最佳实践 Errcode</title>
-      <link>http://example.org/post/errcode/</link>
+      <link>https://blog.fengxu.im/post/errcode/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/errcode/</guid>
+      <guid>https://blog.fengxu.im/post/errcode/</guid>
       <description>代码链接：https://github.com/fengxuway/errcode
 errcode 是一个附带错误码的 error 生成工具
 源代码基于 https://github.com/golang/tools/tree/master/cmd/stringer ，并在此基础上，增加了根据 error 获取错误码的功能。
@@ -25,10 +25,10 @@ errcode -type=Err --linecomment -codefunc=Code -unknowncode=-1 可在同级目�
     
     <item>
       <title>使用自己的服务器自建图床服务，与 mweb 等笔记结合</title>
-      <link>http://example.org/post/picturebed/</link>
+      <link>https://blog.fengxu.im/post/picturebed/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/picturebed/</guid>
+      <guid>https://blog.fengxu.im/post/picturebed/</guid>
       <description>众所周知，Markdown 文档需要图床作为支持，才能在互联网中方便的共享。在图床平台里，七牛云深得大家推荐，可弊端也很明显，需要手机号注册（貌似还需要域名备案？），大陆服务的通病吧。个人对这个颇有芥蒂，生怕不小心分享了一些越界内容被抓到小辫辫。另外还有一些免费的小网站提供图床，又担心随时可能停服关门，数据丢了就太可惜了。 直到今天无意间发现自己用的 MWeb 笔记软件有自定义图床，索性写个服务尝试了一下，整个过程很简单，如果大家对安全性/隐私性要求高，且用的 markdown 编辑软件提供如图“自定义图床”这样的功能，不妨一试～ 图床服务代码 图床服务使用 golang + gin 框架实现，创建项目：
 mkdir picture_bed cd picture_bed # 初始化 项目 go mod init github.com/xxxx/xxxxx # 下载依赖 go get github.com/gin-gonic/gin go get github.com/satori/go.uuid # 创建main代码 touch main.go 完整代码 ：
 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;log&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;os&amp;#34; &amp;#34;path/filepath&amp;#34; &amp;#34;regexp&amp;#34; &amp;#34;time&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; uuid &amp;#34;github.com/satori/go.uuid&amp;#34; ) var ( uploadAPIPath = &amp;#34;/&amp;#34; downloadAPIPath = &amp;#34;/&amp;#34; dst = &amp;#34;/data/upload&amp;#34; token = &amp;#34;自定义你的token&amp;#34; reg = regexp.MustCompile(`.*?(\.\w+)$`) ) func main() { gin.</description>
