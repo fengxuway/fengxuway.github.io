@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="My New Hugo Site">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="http://example.org//">
+    <meta property="twitter:image" content="http://example.org//" />
+    
+
+    
+    <meta name="title" content="使用自己的服务器自建图床服务，与 mweb 等笔记结合" />
+    <meta property="og:title" content="使用自己的服务器自建图床服务，与 mweb 等笔记结合" />
+    <meta property="twitter:title" content="使用自己的服务器自建图床服务，与 mweb 等笔记结合" />
+    
+
+    
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="twitter:description" content="" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>使用自己的服务器自建图床服务，与 mweb 等笔记结合 | </title>
+
+    <link rel="canonical" href="/post/picturebed/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link rel="stylesheet" href="/css/font-awesome.all.min.css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <script src="/js/lazysizes.min.js"></script>
+
+    
+    
+
+</head>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">My New Hugo Site</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/tech/">tech</a>
+                        </li>
+                        
+                    
+                    
+		    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/tag1" title="tag1">
+                            tag1
+                        </a>
+                        
+                        <a class="tag" href="/tags/tag2" title="tag2">
+                            tag2
+                        </a>
+                        
+                    </div>
+                    <h1>使用自己的服务器自建图床服务，与 mweb 等笔记结合</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     &#34;&#34;
+                             
+                            on 
+                            Monday, June 4, 2018
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <p>众所周知，Markdown 文档需要图床作为支持，才能在互联网中方便的共享。在图床平台里，七牛云深得大家推荐，可弊端也很明显，需要手机号注册（貌似还需要域名备案？），大陆服务的通病吧。个人对这个颇有芥蒂，生怕不小心分享了一些越界内容被抓到小辫辫。另外还有一些免费的小网站提供图床，又担心随时可能停服关门，数据丢了就太可惜了。
+直到今天无意间发现自己用的 MWeb 笔记软件有自定义图床，索性写个服务尝试了一下，整个过程很简单，如果大家对安全性/隐私性要求高，且用的 markdown 编辑软件提供如图“自定义图床”这样的功能，不妨一试～
+
+  <img src="https://file.fengxu.im/2021/05/15/38c0b8d1-d6af-4044-98f8-15f065702ae5.jpg" alt="">
+
+</p>
+<h2 id="图床服务代码">图床服务代码</h2>
+<p>图床服务使用 golang + gin 框架实现，创建项目：</p>
+<pre tabindex="0"><code>mkdir picture_bed
+cd picture_bed
+
+# 初始化
+项目
+go mod init github.com/xxxx/xxxxx
+
+# 下载依赖
+go get github.com/gin-gonic/gin
+go get github.com/satori/go.uuid
+
+# 创建main代码
+touch main.go
+</code></pre><p>完整代码：</p>
+<pre tabindex="0"><code>package main
+
+import (
+	&#34;fmt&#34;
+	&#34;log&#34;
+	&#34;net/http&#34;
+	&#34;os&#34;
+	&#34;path/filepath&#34;
+	&#34;regexp&#34;
+	&#34;time&#34;
+
+	&#34;github.com/gin-gonic/gin&#34;
+	uuid &#34;github.com/satori/go.uuid&#34;
+)
+
+var (
+	uploadAPIPath   = &#34;/&#34;
+	downloadAPIPath = &#34;/&#34;
+	dst             = &#34;/data/upload&#34;
+	token           = &#34;自定义你的token&#34;
+
+	reg = regexp.MustCompile(`.*?(\.\w+)$`)
+)
+
+func main() {
+	gin.SetMode(gin.ReleaseMode)
+
+	fmt.Println(&#34;hello&#34;)
+	g := gin.New()
+
+	g.Handle(http.MethodPost, uploadAPIPath, func(c *gin.Context) {
+		if c.GetHeader(&#34;token&#34;) != token {
+			c.String(http.StatusUnauthorized, &#34;token wrong&#34;)
+			return
+		}
+		// 单文件
+		file, err := c.FormFile(&#34;file&#34;)
+		if err != nil {
+			c.String(http.StatusBadRequest, &#34;no file found in form:file&#34;)
+			return
+		}
+		log.Println(file.Filename)
+		// 上传文件到指定的路径
+		filename := randomFileName(file.Filename)
+		fileURLPath := &#34;/&#34; + filepath.Join(time.Now().Format(&#34;2006/01/02&#34;))
+		err = os.MkdirAll(filepath.Join(dst, fileURLPath), 0755)
+		if err != nil {
+			c.String(http.StatusInternalServerError, fmt.Sprintf(&#34;upload got error: %v&#34;, err))
+			fmt.Println(&#34;error:&#34;, err)
+		}
+		fileURLPath = filepath.Join(fileURLPath, filename)
+		absPath := filepath.Join(dst, fileURLPath)
+		err = c.SaveUploadedFile(file, absPath)
+		if err != nil {
+			c.String(http.StatusInternalServerError, fmt.Sprintf(&#34;upload got error: %v&#34;, err))
+			fmt.Println(&#34;error:&#34;, err)
+		} else {
+			c.String(http.StatusOK, fmt.Sprintf(&#34;{\&#34;url\&#34;:\&#34;%s\&#34;}&#34;, fileURLPath))
+			fmt.Println(fmt.Sprintf(&#34;{\&#34;url\&#34;:\&#34;%s\&#34;}&#34;, fileURLPath))
+		}
+	})
+	g.Static(downloadAPIPath, dst)
+	log.Fatal(g.Run(&#34;127.0.0.1:8090&#34;))
+}
+
+func randomFileName(filename string) string {
+	u := uuid.NewV4()
+
+	match := reg.FindAllStringSubmatch(filename, -1)
+	if len(match) == 0 {
+		return u.String() + filename
+	}
+	return u.String() + match[0][1]
+}
+</code></pre><p>其中端口<code>8090</code>和上传文件存放路径<code>/data/upload/</code>暂时写死在代码里，大家可酌情更改。
+编译：</p>
+<pre tabindex="0"><code>env GOOS=linux go build
+</code></pre><h2 id="部署到-linux-服务器中">部署到 linux 服务器中</h2>
+<p>将编译后的文件上传到服务器中，并添加执行权限，创建 systemctl 文件，以 Ubuntu 20.04 为例，文件放在<code>/usr/local/bin/uploader</code>中。systemctl 文件路径：</p>
+<pre tabindex="0"><code>/lib/systemd/system/uploader.service
+</code></pre><p>内容：</p>
+<pre tabindex="0"><code>[Unit]
+Description=uploader service port 8090
+Documentation=man:uuidd(8)
+
+[Service]
+ExecStart=/usr/local/bin/uploader
+Restart=no
+User=root
+Group=root
+#ProtectSystem=strict
+#ProtectHome=yes
+</code></pre><p>加载配置，启动</p>
+<pre tabindex="0"><code>systemctl daemon-reload
+systemctl restart uploader
+</code></pre><p>使用域名代理：
+安装 nginx，并添加配置：</p>
+<pre tabindex="0"><code>server {
+    listen      80;
+    server_name file.fengxu.im;
+    access_log  /var/log/git-access.log;
+    location / {
+        proxy_pass          http://127.0.0.1:8090;
+        proxy_set_header    Host  $host;
+        proxy_set_header    x-Forwarded-For $http_x_forwarded_for;
+        proxy_redirect      off;
+    }
+}
+</code></pre><p>记得修改域名为你自己的。重新加载 nginx 配置即生效。
+域名使用 80 端口，若想使用 https 服务，需要生成 https 证书，后面更新相关文档。</p>
+<h2 id="和-mweb-软件整合">和 MWeb 软件整合</h2>
+<p>依次进入首选项 - 发布服务 - 图床 - 自定义，按你的服务域名填写对应项：
+
+  <img src="https://file.fengxu.im/2021/05/15/a6a9d0ba-518e-472e-adf1-efec18e50505.jpg" alt="">
+
+</p>
+<p>注意修改 API 地址/域名前缀/token 等信息。
+保存后，在 MWeb 的外部文档模式（<!-- raw HTML omitted -->command<!-- raw HTML omitted --> + <!-- raw HTML omitted -->E<!-- raw HTML omitted -->）右键点击需要使用图床的文件夹，点击“编辑”：
+
+  <img src="https://file.fengxu.im/2021/05/15/7b3b419b-df78-449a-b5ae-0616abd4d3c5.jpg" alt="">
+
+</p>
+<p>选中刚刚创建的图床就可以了。编辑文档时直接粘贴图片，即自动上传并生成图片链接。</p>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/post/errcode/" data-toggle="tooltip" data-placement="top" title="Golang 错误码最佳实践 Errcode">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="fengxuway/discussion"
+        data-repo-id="R_kgDOJd22Fg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJd22Fs4CWMzN"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; My New Hugo Site 2023
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

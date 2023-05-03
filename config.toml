@@ -1,0 +1,18 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'cleanwhite'
+
+[params.giscus]
+    data_repo="fengxuway/discussion"
+    data_repo_id="R_kgDOJd22Fg"
+    data_category="Announcements"
+    data_category_id="DIC_kwDOJd22Fs4CWMzN"
+    data_mapping="pathname"
+    data_reactions_enabled="1"
+    data_emit_metadata="0"
+    data_theme="preferred_color_scheme"
+    data_input_position="bottom"
+    data_lang="zh-CN"
+    data_strict="0"
+    crossorigin="anonymous"
