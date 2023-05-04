@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sqlx on 冯旭的博客</title>
+    <link>https://blog.fengxu.im/tags/sqlx/</link>
+    <description>Recent content in sqlx on 冯旭的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 04 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fengxu.im/tags/sqlx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL Prepare 性能分析和优化</title>
+      <link>https://blog.fengxu.im/post/mysql_prepare_optimize/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fengxu.im/post/mysql_prepare_optimize/</guid>
+      <description>&lt;p&gt;通常，我们开发与 MySQL 数据库交互过程中，经常使用 prepared（预处理编译） 语句防止 sql 注入。那么 prepared statement 和数据库是如何交互的，有哪些细节是可以优化的呢？本文借住 Wireshark 抓包工具来详细了解。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

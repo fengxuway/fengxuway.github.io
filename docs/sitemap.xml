@@ -3,27 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.fengxu.im/categories/</loc>
-    <lastmod>2023-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.fengxu.im/tags/golang/</loc>
+    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.fengxu.im/tags/mysql/</loc>
+    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.fengxu.im/post/mysql_prepare_optimize/</loc>
+    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.fengxu.im/post/</loc>
+    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.fengxu.im/tags/prepare/</loc>
+    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.fengxu.im/tags/sqlx/</loc>
+    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.fengxu.im/tags/</loc>
+    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.fengxu.im/categories/tech/</loc>
+    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.fengxu.im/</loc>
+    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.fengxu.im/tags/error-code/</loc>
     <lastmod>2023-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.fengxu.im/tags/golang/</loc>
-    <lastmod>2023-05-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.fengxu.im/post/errcode/</loc>
-    <lastmod>2023-05-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.fengxu.im/post/</loc>
-    <lastmod>2023-05-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.fengxu.im/tags/</loc>
-    <lastmod>2023-05-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.fengxu.im/categories/tech/</loc>
-    <lastmod>2023-05-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.fengxu.im/</loc>
     <lastmod>2023-05-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.fengxu.im/post/picturebed/</loc>
