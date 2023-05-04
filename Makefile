@@ -1,4 +1,4 @@
 
 build:
-	hugo -d docs
-	#echo "blog.fengxu.im" > docs/CNAME
+	hugo --cleanDestinationDir -d docs
+	echo "blog.fengxu.im" > docs/CNAME
