@@ -1,6 +1,6 @@
 baseURL = 'https://blog.fengxu.im/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'zh-CN'
+title = '冯旭的博客'
 theme = 'cleanwhite'
 
 [params.giscus]

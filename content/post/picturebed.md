@@ -3,9 +3,9 @@ title: "使用自己的服务器自建图床服务，与 mweb 等笔记结合"
 subtitle: ""
 description: ""
 date: 2018-06-04
-author:      ""
+author:      "冯旭"
 image: ""
-tags: ["tag1", "tag2"]
+tags: ["Golang", "图床"]
 categories: ["Tech"]
 ---
 

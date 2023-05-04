@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Golang on My New Hugo Site</title>
+    <title>Golang on 冯旭的博客</title>
     <link>https://blog.fengxu.im/tags/golang/</link>
-    <description>Recent content in Golang on My New Hugo Site</description>
+    <description>Recent content in Golang on 冯旭的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-CN</language>
     <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fengxu.im/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang 错误码最佳实践 Errcode</title>
@@ -14,6 +14,15 @@
       
       <guid>https://blog.fengxu.im/post/errcode/</guid>
       <description>&lt;p&gt;基于 Golang int 枚举的错误类型生成工具&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用自己的服务器自建图床服务，与 mweb 等笔记结合</title>
+      <link>https://blog.fengxu.im/post/picturebed/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fengxu.im/post/picturebed/</guid>
+      <description>&lt;p&gt;略&lt;/p&gt;</description>
     </item>
     
   </channel>

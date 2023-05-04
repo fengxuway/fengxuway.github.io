@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>图床 on 冯旭的博客</title>
+    <link>https://blog.fengxu.im/tags/%E5%9B%BE%E5%BA%8A/</link>
+    <description>Recent content in 图床 on 冯旭的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 04 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fengxu.im/tags/%E5%9B%BE%E5%BA%8A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用自己的服务器自建图床服务，与 mweb 等笔记结合</title>
+      <link>https://blog.fengxu.im/post/picturebed/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.fengxu.im/post/picturebed/</guid>
+      <description>&lt;p&gt;略&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

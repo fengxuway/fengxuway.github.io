@@ -14,9 +14,6 @@
     <loc>https://blog.fengxu.im/post/errcode/</loc>
     <lastmod>2023-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.fengxu.im/</loc>
-    <lastmod>2023-05-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.fengxu.im/post/</loc>
     <lastmod>2023-05-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -26,13 +23,13 @@
     <loc>https://blog.fengxu.im/categories/tech/</loc>
     <lastmod>2023-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.fengxu.im/tags/tag1/</loc>
-    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.fengxu.im/tags/tag2/</loc>
-    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
+    <loc>https://blog.fengxu.im/</loc>
+    <lastmod>2023-05-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.fengxu.im/post/picturebed/</loc>
+    <lastmod>2018-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.fengxu.im/tags/%E5%9B%BE%E5%BA%8A/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
   </url>
 </urlset>

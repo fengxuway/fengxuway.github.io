@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My New Hugo Site</title>
+    <title>Tags on 冯旭的博客</title>
     <link>https://blog.fengxu.im/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
+    <description>Recent content in Tags on 冯旭的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-CN</language>
     <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.fengxu.im/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Error Code</title>
@@ -26,20 +26,11 @@
     </item>
     
     <item>
-      <title>tag1</title>
-      <link>https://blog.fengxu.im/tags/tag1/</link>
+      <title>图床</title>
+      <link>https://blog.fengxu.im/tags/%E5%9B%BE%E5%BA%8A/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.fengxu.im/tags/tag1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag2</title>
-      <link>https://blog.fengxu.im/tags/tag2/</link>
-      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.fengxu.im/tags/tag2/</guid>
+      <guid>https://blog.fengxu.im/tags/%E5%9B%BE%E5%BA%8A/</guid>
       <description></description>
     </item>
     
